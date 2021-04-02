@@ -8,9 +8,9 @@
 import Foundation
 
 public class PublicAPI {
-    public var publicVar: String?
+    public var publicAnotherVar: String?
 
-    public func publicFunc() -> String {
+    public func publicAnotherFunc() -> String {
         return ""
     }
 }
