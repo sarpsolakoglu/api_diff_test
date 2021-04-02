@@ -10,6 +10,7 @@
 		C33E77972617162C00C5B3DF /* APIDiffTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C33E778D2617162B00C5B3DF /* APIDiffTest.framework */; };
 		C33E779C2617162C00C5B3DF /* APIDiffTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E779B2617162C00C5B3DF /* APIDiffTestTests.swift */; };
 		C33E779E2617162C00C5B3DF /* APIDiffTest.h in Headers */ = {isa = PBXBuildFile; fileRef = C33E77902617162B00C5B3DF /* APIDiffTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C33E77AA261718BB00C5B3DF /* PublicAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33E77A9261718BB00C5B3DF /* PublicAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		C33E77962617162C00C5B3DF /* APIDiffTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIDiffTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33E779B2617162C00C5B3DF /* APIDiffTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDiffTestTests.swift; sourceTree = "<group>"; };
 		C33E779D2617162C00C5B3DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33E77A9261718BB00C5B3DF /* PublicAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				C33E77902617162B00C5B3DF /* APIDiffTest.h */,
 				C33E77912617162B00C5B3DF /* Info.plist */,
+				C33E77A9261718BB00C5B3DF /* PublicAPI.swift */,
 			);
 			path = APIDiffTest;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				TargetAttributes = {
 					C33E778C2617162B00C5B3DF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					C33E77952617162C00C5B3DF = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C33E77AA261718BB00C5B3DF /* PublicAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		C33E77A22617162C00C5B3DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXH4N466X5;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssolakoglu.APIDiffTest;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		C33E77A32617162C00C5B3DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LXH4N466X5;
@@ -389,6 +397,7 @@
 		C33E77A52617162C00C5B3DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXH4N466X5;
 				INFOPLIST_FILE = APIDiffTestTests/Info.plist;
@@ -407,6 +416,7 @@
 		C33E77A62617162C00C5B3DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LXH4N466X5;
 				INFOPLIST_FILE = APIDiffTestTests/Info.plist;
